@@ -15,6 +15,8 @@ RUN mkdir /tmp/adafruit \
 	&& cd Adafruit_Python_LED_Backpack \
 	&& python ./setup.py install
 
+RUN echo "install complete"
+
 # copy current directory into /app
 COPY . /app
 
